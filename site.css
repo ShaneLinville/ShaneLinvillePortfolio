@@ -244,3 +244,29 @@ footer {
 .panel {
     margin-top: 25px;
 }
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 75%;
+    max-width: 75%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 90%;
+    max-width: 90%;
+  }
+}
